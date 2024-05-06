@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Dates from "./components/Dates";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      页面建设中
+    <main className="pt-[20px] pl-[20px]">
+      <Dates />
     </main>
   );
 }
