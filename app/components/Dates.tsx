@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import dayjs from "dayjs";
 
-export default function () {
+function Dates () {
 
   const getDateString:() => string = () => {
     console.log(`run once`);
@@ -29,3 +29,4 @@ export default function () {
     </div>
   )
 }
+export default Dates;
