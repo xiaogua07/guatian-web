@@ -1,21 +1,31 @@
 'use client'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import dayjs from "dayjs";
 
 export default function () {
 
-  const today = dayjs();
-  const formattedDate = today.format('dddd, MMMM D');
+  const getDateString:() => string = () => {
+    console.log(`run once`);
+    
+    return dayjs().format('dddd, MMMM D');
+  }
+
+  const [dateString, setDateString] = 
+    useState(getDateString());
 
   useEffect(() => {
-    setInterval(() => {
-      console.log(`1s`);
-    }, 1000);
-  }, []);
+    const timer = setInterval(() => {
+      setDateString(getDateString());
+    }, 1000 * 60 * 60);
+
+    return () => {
+      clearInterval(timer);
+    }
+  });
 
   return (
     <div className="text-[60px]">
-      {formattedDate}
+      {dateString}
     </div>
   )
 }
