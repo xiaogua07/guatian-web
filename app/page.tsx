@@ -56,7 +56,7 @@ export default function Home() {
     <main className="pt-[20px] px-[20px]">
       <Dates />
 
-      <div>
+      <div className="text-[16px]">
         🎈 正在跟管理气象的神仙请教中
       </div>
 

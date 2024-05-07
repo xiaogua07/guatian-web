@@ -24,7 +24,7 @@ function Dates () {
   });
 
   return (
-    <div className="text-[60px]">
+    <div className="text-[40px]">
       {dateString}
     </div>
   )
