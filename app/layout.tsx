@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script src="https://at.alicdn.com/t/c/font_4535178_anzvmn7ehbv.js" />
+        <Script src="https://at.alicdn.com/t/c/font_4535178_la6p58pta3.js" />
       </head>
       <body className={inter.className}>{children}</body>
 
