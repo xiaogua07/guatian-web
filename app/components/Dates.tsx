@@ -7,7 +7,7 @@ function Dates () {
   const getDateString:() => string = () => {
     console.log(`run once`);
     
-    return dayjs().format('dddd, MMMM D');
+    return dayjs('2025-07-29').format('dddd, MMM. D');
   }
 
   const [dateString, setDateString] = 

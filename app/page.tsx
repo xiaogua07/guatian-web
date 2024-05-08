@@ -68,9 +68,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center">
-            <svg className="icon text-[32px]" aria-hidden="true">
-              <use xlinkHref="#icon-lifa"></use>
-            </svg>
+            💇🏻
             <div className="flex items-center">
               <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
                 {
@@ -82,9 +80,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center">
-            <svg className="icon text-[32px]" aria-hidden="true">
-              <use xlinkHref="#icon-tubiao-82"></use>
-            </svg>
+            🛏️
             <div className="flex items-center">
               <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
                 {
@@ -102,9 +98,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center">
-            <svg className="icon text-[32px]" aria-hidden="true">
-              <use xlinkHref="#icon-lifa"></use>
-            </svg>
+            💇🏻
             <div className="flex items-center">
               <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
                 {
@@ -116,9 +110,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center">
-            <svg className="icon text-[32px]" aria-hidden="true">
-              <use xlinkHref="#icon-tubiao-82"></use>
-            </svg>
+            🛏
             <div className="flex items-center">
               <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
                 {
@@ -136,9 +128,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center">
-            <svg className="icon text-[32px]" aria-hidden="true">
-              <use xlinkHref="#icon-housekeeper_female"></use>
-            </svg>
+            🧹
             <div className="flex items-center">
               <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
                 {
