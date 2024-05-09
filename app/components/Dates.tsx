@@ -5,9 +5,7 @@ import dayjs from "dayjs";
 function Dates () {
 
   const getDateString:() => string = () => {
-    console.log(`run once`);
-    
-    return dayjs().format('dddd, MMMM D');
+    return dayjs().format('dddd, MMM. D');
   }
 
   const [dateString, setDateString] = 
@@ -24,7 +22,7 @@ function Dates () {
   });
 
   return (
-    <div className="text-[40px]">
+    <div className="text-[60px]">
       {dateString}
     </div>
   )
