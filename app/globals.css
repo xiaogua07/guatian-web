@@ -17,6 +17,11 @@
   }
 }
 
+@font-face {
+  font-family: 'poppins simi';
+  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
