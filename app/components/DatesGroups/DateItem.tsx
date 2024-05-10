@@ -2,6 +2,7 @@
 
 import dayjs from 'dayjs'
 import { OneDate } from './DatesGroups'
+import useIntervalUpdate from '@/app/hooks/useIntervalUpdate'
 
 
 interface Props {
@@ -20,7 +21,7 @@ const DateItem: React.FC<Props> = ({
         const targetDate = dayjs(date);
 
         // 计算两个日期之间的自然日差值，忽略时间部分
-        const daysDifference = today.diff(targetDate, 'day');
+        const daysDifference = Math.abs(today.diff(targetDate, 'day'));
         return daysDifference;
     }
 

@@ -20,6 +20,7 @@ export default function Home() {
       // 更新状态以触发组件重新渲染
       setRefreshCount(prevCount => prevCount + 1);
     }, 15 * 60 * 1000); // 10分钟的毫秒数
+    // }, 500); // 10分钟的毫秒数
 
     // 返回一个清理函数，当组件卸载时清除定时器，防止内存泄漏
     return () => {
