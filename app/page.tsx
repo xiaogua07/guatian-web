@@ -3,8 +3,8 @@
 import Dates from "./components/Dates";
 import Building from "./components/Building";
 import Divider from "./components/Divider";
-import dayjs from "dayjs";
 import { useEffect, useState } from "react";
+import DatesGroups, { DatesGroup } from "./components/DatesGroups/DatesGroups";
 
 export default function Home() {
   // 使用useState创建一个状态，用于触发组件重新渲染
@@ -26,53 +26,57 @@ export default function Home() {
     };
   }, []); // 注意：这里没有依赖项，意味着该effect只运行一次（在组件挂载时）
 
-  const rooms = [
+  const datesGroups:  DatesGroup[] = [
     {
       name: "瓜",
       dates: [
+        // 理发
         {
-          title: '',
-          lastDate: '',
-        }
+          title:  '💇🏻',
+          lastDate: '2024-04-16',
+        },
+        // 换床单
+        {
+          title:  '🛏️',
+          lastDate: '2024-04-06',
+        },
+      ]
+    },
+    {
+      name: "陆",
+      dates: [
+        // 理发
+        {
+          title:  '💇🏻',
+          lastDate: '2024-05-03',
+        },
+        // 换床单
+        {
+          title:  '🛏️',
+          lastDate: '2024-05-03',
+        },
+      ]
+    },
+    {
+      name: "田",
+      dates: [
+        // 拖地
+        {
+          title: '🧹',
+          lastDate: '2024-05-04',
+        },
       ]
     }
   ]
-  const guaDates = {
-    hairCutTime: "2024-04-16",
-    bedSheetChangeTime: "2024-04-06"
-  }
-
-  const luDates = {
-    hairCutTime: "2024-05-03",
-    bedSheetChangeTime: "2024-05-03"
-  }
-
-  const guatianDates = {
-    moppingFloorTime: "2024-05-04",
-  }
-
-  const getDiffDays = (date: string) => {
-    // 获取今天的日期
-    const today = dayjs();
-
-    // 定义目标日期
-    const targetDate = dayjs(date);
-
-    // 计算两个日期之间的自然日差值，忽略时间部分
-    const daysDifference = today.diff(targetDate, 'day');
-    return daysDifference;
-  }
 
   return (
-    <main className="pt-[20px] px-[20px]">
+    <main className="pt-[20px] px-[20px] w-screen h-screen border-8 border-orange-800	">
       <Dates />
-
       <div className="text-[16px]">
         🎈 正在跟管理气象的神仙请教中
       </div>
-
       <Divider />
-
+      <DatesGroups datesGroups={datesGroups} />
       <Building />
     </main>
   );
