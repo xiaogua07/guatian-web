@@ -5,6 +5,7 @@ import Building from "./components/Building";
 import Divider from "./components/Divider";
 import { useEffect, useState } from "react";
 import DatesGroups, { DatesGroup } from "./components/DatesGroups/DatesGroups";
+import ProgressBarByYear from "./components/ProgressBarByYear";
 
 export default function Home() {
   // 使用useState创建一个状态，用于触发组件重新渲染
@@ -65,19 +66,24 @@ export default function Home() {
           title: '🧹',
           lastDate: '2024-05-04',
         },
+        // 迪士尼乐园
+        {
+          title: '🎠',
+          lastDate: '2024-05-25'
+        }
       ]
     }
   ]
 
   return (
-    <main className="pt-[20px] px-[20px] w-screen h-screen border-8 border-orange-800	">
+    <main className="pt-[20px] px-[20px] w-screen h-screen border-8 border-orange-800	font-[poppins-simi] relative ">
       <Dates />
       <div className="text-[16px]">
         🎈 正在跟管理气象的神仙请教中
       </div>
       <Divider />
       <DatesGroups datesGroups={datesGroups} />
-      <Building />
+      <ProgressBarByYear />
     </main>
   );
 }

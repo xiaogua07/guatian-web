@@ -22,7 +22,7 @@ function Dates () {
   });
 
   return (
-    <div className="text-[54px] font-[poppins-simi]">
+    <div className="text-[54px]">
       {dateString}
     </div>
   )
