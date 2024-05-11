@@ -12,7 +12,7 @@ const DatesGroupItem: React.FC<Props> = ({
     datesGroup
 }) => {
     return (
-        <div className="p-[16px] bg-zinc-600/[.6] flex-1 relative rounded-[16px]  ">
+        <div className="p-[16px] bg-zinc-600/[.6] flex-1 relative rounded-[16px] mt-[28px] ">
             <div className="absolute top-[-16px] left-[-12px]">
                 {datesGroup.name}
             </div>
