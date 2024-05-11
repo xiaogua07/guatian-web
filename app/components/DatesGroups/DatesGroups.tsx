@@ -19,7 +19,7 @@ const DatesGroups: React.FC<Props> = ({
 }) => {
 
   return (
-    <div className="flex sm:space-x-4 flex-col sm:flex-row">
+    <div className="flex flex-col sm:space-x-4 sm:flex-row">
       {
         datesGroups.map((datesGroup, index) => {
           return (
