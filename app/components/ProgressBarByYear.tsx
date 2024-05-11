@@ -32,7 +32,7 @@ const ProgressBarByYear = () => {
     }
 
     return (
-        <div className='absolute bottom-0 ' style={{ left: calculateStylesLeft() }}>
+        <div className='fixed bottom-0 ' style={{ left: calculateStylesLeft() }}>
             <Image
                 className=''
                 src={'/run-mario.gif'} alt="run mario" width={32} height={100} />

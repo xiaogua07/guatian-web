@@ -77,7 +77,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="pt-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
+    <main className="py-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
     font-[poppins-simi] relative overflow-auto">
       <Dates />
       <div className="text-[16px]">
