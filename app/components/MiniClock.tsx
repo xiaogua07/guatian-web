@@ -5,7 +5,7 @@ interface MyProps {
 }
 const MiniClock: React.FC<MyProps> = ({ today }) => {
     return (
-        <div className="clock ">
+        <div className="absolute right-[15px] clock w-[70px] h-[70px] border">
             <div className="hour">
                 <div className="hour-pointer"></div>
             </div>
