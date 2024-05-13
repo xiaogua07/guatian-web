@@ -1,5 +1,6 @@
 'use client'
 
+import { Dayjs } from 'dayjs'
 import DatesGroupItem from './DatesGroupItem'
 
 export interface OneDate {
@@ -12,10 +13,11 @@ export interface DatesGroup {
 }
 interface Props {
   datesGroups: DatesGroup[]
+  today: Dayjs
 }
 
 const DatesGroups: React.FC<Props> = ({
-  datesGroups
+  datesGroups, today
 }) => {
 
   return (
@@ -23,7 +25,7 @@ const DatesGroups: React.FC<Props> = ({
       {
         datesGroups.map((datesGroup, index) => {
           return (
-            <DatesGroupItem datesGroup={datesGroup} key={index} />
+            <DatesGroupItem datesGroup={datesGroup} key={index} today={today} />
           )
         })
       }

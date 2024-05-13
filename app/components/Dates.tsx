@@ -1,29 +1,25 @@
 'use client'
-import { useEffect, useState } from "react"
-import dayjs from "dayjs";
+import { useEffect, useMemo, useState } from "react"
+import dayjs, { Dayjs } from "dayjs";
+import MiniClock from "./MiniClock";
 
-function Dates () {
+interface MyProps {
+  today: Dayjs
+}
 
-  const getDateString:() => string = () => {
-    return dayjs().format('dddd, MMM. D');
-  }
+const Dates: React.FC<MyProps> = ({today}) => {
 
-  const [dateString, setDateString] = 
-    useState(getDateString());
+  const formatStr = 'dddd, MMM. D';
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setDateString(getDateString());
-    }, 1000 * 60 * 60);
-
-    return () => {
-      clearInterval(timer);
-    }
-  });
+  const dateString = useMemo(() => {
+    return today.format(formatStr);
+  }, [today]);
 
   return (
     <div className="text-[54px]">
       {dateString}
+
+      <MiniClock today={today} />
     </div>
   )
 }
