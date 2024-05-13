@@ -11,6 +11,9 @@ const config: Config = {
       'sm': '500px',
     },
     extend: {
+      colors: {
+        'clock-bg': 'rgba(250, 200, 200, .9)'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
