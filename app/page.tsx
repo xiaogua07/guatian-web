@@ -77,7 +77,7 @@ export default function Home() {
     font-[poppins-simi] relative overflow-auto">
       <Dates today={today} />
       <div className="text-[16px]">
-        <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=ff8040&ltf=0080ff&htf=ff0000&q=1&e=0&a=1&c=54511&w=180&h=36&align=left"></iframe>
+        <iframe allowTransparency={true} frameBorder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=ff8040&ltf=0080ff&htf=ff0000&q=1&e=0&a=1&c=54511&w=180&h=36&align=left"></iframe>
       </div>
       <Divider />
       <DatesGroups datesGroups={datesGroups} today={today} />
