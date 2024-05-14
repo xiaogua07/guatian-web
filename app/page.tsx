@@ -73,11 +73,11 @@ export default function Home() {
   })
 
   return (
-    <main className="py-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
+    <main className="pb-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
     font-[poppins-simi] relative overflow-auto">
       <Dates today={today} />
       <div className="text-[16px]">
-        🎈 正在跟管理气象的神仙请教中
+        <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=ff8040&ltf=0080ff&htf=ff0000&q=1&e=0&a=1&c=54511&w=180&h=36&align=left"></iframe>
       </div>
       <Divider />
       <DatesGroups datesGroups={datesGroups} today={today} />
