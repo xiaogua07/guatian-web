@@ -15,7 +15,7 @@ const Dates: React.FC<MyProps> = ({today}) => {
   }, [today]);
 
   return (
-    <div className="text-[54px]">
+    <div className="text-[51px] h-[72px]">
       {dateString}
     </div>
   )
