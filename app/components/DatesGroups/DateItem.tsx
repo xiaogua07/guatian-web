@@ -25,18 +25,17 @@ const DateItem: React.FC<Props> = ({
     }
 
     const diffDays = useMemo(() => { 
-        console.log(`Heart beat!`);
         return getDiffDays(oneDate.lastDate) 
     }, [today, oneDate])
 
     return (
         <div className="flex items-center">
-            {oneDate.title}
+            <div className='text-[30px] w-[30px] h-[30px] leading-4'>{oneDate.title}</div>
             <div className="flex items-center">
-                <div className=" mx-[12px] text-[36px] text-red-300	font-bold	">
+                <div className=" ml-[12px] mr-[4px] text-[20px] text-red	font-bold text-[20px]">
                     {diffDays}
                 </div>
-                <div>天</div>
+                <div className='text-[16px] font-bold'>天</div>
             </div>
         </div>
     )

@@ -14,8 +14,8 @@ const DatesGroupItem: React.FC<Props> = ({
     datesGroup, today
 }) => {
     return (
-        <div className="p-[16px] bg-zinc-600/[.6] flex-1 relative rounded-[16px] mt-[28px] ">
-            <div className="absolute top-[-16px] left-[-12px]">
+        <div className="p-[16px] bg-gray flex-1 relative rounded-[16px] mt-[28px] ">
+            <div className="absolute bottom-[-4px] left-[-12px] font-bold">
                 {datesGroup.name}
             </div>
             {

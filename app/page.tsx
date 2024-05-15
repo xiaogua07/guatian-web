@@ -7,6 +7,7 @@ import DatesGroups, { DatesGroup } from "./components/DatesGroups/DatesGroups";
 import ProgressBarByYear from "./components/ProgressBarByYear";
 import TestComponent from "./components/TestComponent";
 import dayjs from "dayjs";
+import Weather from "./components/Weather";
 
 export default function Home() {
 
@@ -55,6 +56,11 @@ export default function Home() {
           lastDate: '2024-05-25'
         }
       ]
+    },
+    {
+      name: "未知",
+      dates: [
+      ]
     }
   ]
 
@@ -76,9 +82,7 @@ export default function Home() {
     <main className="pb-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
     font-[poppins-simi] relative overflow-auto">
       <Dates today={today} />
-      <div className="text-[16px]">
-        <iframe allowTransparency={true} frameBorder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=ff8040&ltf=0080ff&htf=ff0000&q=1&e=0&a=1&c=54511&w=180&h=36&align=left"></iframe>
-      </div>
+      <Weather />
       <Divider />
       <DatesGroups datesGroups={datesGroups} today={today} />
       <ProgressBarByYear />

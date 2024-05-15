@@ -12,7 +12,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'clock-bg': 'rgba(250, 200, 200, .9)'
+        'gray': '#ccc',
+        'red': '#bd3333'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
