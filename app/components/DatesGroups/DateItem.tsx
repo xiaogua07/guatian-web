@@ -29,10 +29,10 @@ const DateItem: React.FC<Props> = ({
     }, [today, oneDate])
 
     return (
-        <div className="flex items-center">
+        <div className="flex items-center ">
             <div className='text-[30px] w-[30px] h-[30px] leading-4'>{oneDate.title}</div>
             <div className="flex items-center">
-                <div className=" ml-[12px] mr-[4px] text-[20px] text-red	font-bold text-[20px]">
+                <div className=" ml-[12px] mr-[4px] text-[20px] text-red font-bold text-[20px]">
                     {diffDays}
                 </div>
                 <div className='text-[16px] font-bold'>天</div>
