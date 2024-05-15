@@ -5,7 +5,6 @@ import Divider from "./components/Divider";
 import { useEffect, useState } from "react";
 import DatesGroups, { DatesGroup } from "./components/DatesGroups/DatesGroups";
 import ProgressBarByYear from "./components/ProgressBarByYear";
-import TestComponent from "./components/TestComponent";
 import dayjs from "dayjs";
 import Weather from "./components/Weather";
 
