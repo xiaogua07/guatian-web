@@ -21,7 +21,7 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
   const sunsetHour = useMemo(() => {
     if (dayWeather?.sunset?.split(':')) {
       return parseInt((dayWeather?.sunset?.split(':') as string[])[0]);
-    } 
+    }
     return 0
   }, [dayWeather]);
 
@@ -39,7 +39,7 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
   const sunriseHour = useMemo(() => {
     if (dayWeather?.sunrise?.split(':')) {
       return parseInt((dayWeather?.sunrise?.split(':') as string[])[0]);
-    } 
+    }
     return 0
   }, [dayWeather]);
 
@@ -48,7 +48,7 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
   }, [dayWeather])
   const sunStatus = useMemo(() => {
     return today.isBefore(sunriseDay) ? 'night' : 'day';
-  },[dayWeather])
+  }, [dayWeather])
 
   const dayComponents = () => {
     return (
@@ -68,9 +68,9 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
             - <div>{dayWeather?.tempMax}°</div>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex mt-[12px]">
           <div><i className="qi-100-fill"></i>
-</div>
+          </div>
           <div className="flex ml-[5px]">
             <div>{dayWeather?.sunrise}</div>
             - <div>{dayWeather?.sunset}</div>
