@@ -7,6 +7,7 @@ import DatesGroups, { DatesGroup } from "./components/DatesGroups/DatesGroups";
 import ProgressBarByYear from "./components/ProgressBarByYear";
 import dayjs from "dayjs";
 import Weather from "./components/Weather";
+import useQWeather from "./hooks/useQWeather";
 
 export default function Home() {
 
@@ -65,6 +66,8 @@ export default function Home() {
 
   const [today, setToday] = useState(dayjs());
 
+  const {data} = useQWeather();
+
   useEffect(() => {
     const timer = setInterval(() => {
       console.log(`Tik tok.`)
@@ -81,7 +84,7 @@ export default function Home() {
     <main className="pb-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
     font-[poppins-simi] relative overflow-auto">
       <Dates today={today} />
-      <Weather />
+      <Weather weather={data} />
       <Divider />
       <DatesGroups datesGroups={datesGroups} today={today} />
       <ProgressBarByYear />
