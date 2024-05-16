@@ -52,24 +52,25 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
 
   const dayComponents = () => {
     return (
-      <div className="text-[24px] leading-4 mt-[12px] flex flex-wrap space-x-[16px]">
-        <div className="flex">
+      <div className="text-[24px] leading-4 mt-[12px] flex flex-wrap flex-col sm:flex-row">
+        <div className="flex mr-[16px] mt-[12px] ">
           <div>
             <i className={`qi-${dayWeather?.iconDay}`}></i>
           </div>
           <div className="ml-[5px]">{dayWeather?.textDay}</div>
         </div>
-        <div className="flex">
+        <div className="flex mr-[16px] mt-[12px] ">
           <div>
-            🌡️
+            <i className="qi-2156"></i>
           </div>
-          <div className="flex ml-[5px]">
+          <div className="flex ml-[5px] mt-[12px] ">
             <div>{dayWeather?.tempMin}°</div>
             - <div>{dayWeather?.tempMax}°</div>
           </div>
         </div>
         <div className="flex">
-          <div>☀️</div>
+          <div><i className="qi-100-fill"></i>
+</div>
           <div className="flex ml-[5px]">
             <div>{dayWeather?.sunrise}</div>
             - <div>{dayWeather?.sunset}</div>
@@ -80,21 +81,21 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
   }
   const nightComponents = () => {
     return (
-      <div className="text-[24px] leading-4 mt-[12px] flex flex-wrap space-x-[16px]">
-        <div className="flex">
+      <div className="text-[24px] leading-4flex flex flex-wrap flex-col sm:flex-row">
+        <div className="flex mr-[16px] mt-[12px] ">
           <div>
             <i className={`qi-${dayWeather?.iconNight}`}></i>
           </div>
           <div className="ml-[5px]">{dayWeather?.textNight}</div>
         </div>
-        <div className="flex">
-          <div>🌔</div>
+        <div className="flex mr-[16px] mt-[12px] ">
+          <div><i className="qi-800"></i> </div>
           <div className="flex ml-[5px]">
             <div>{dayWeather?.moonrise}</div>
             - <div>{dayWeather?.moonset}</div>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex mt-[12px] ">
           <div>
             <i className={`qi-${dayWeather?.iconNight}`}></i>
           </div>
