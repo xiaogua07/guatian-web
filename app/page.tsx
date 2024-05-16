@@ -84,7 +84,7 @@ export default function Home() {
     <main className="pb-[14px] px-[20px] w-screen h-screen border-b-8 border-orange-800	
     font-[poppins-simi] relative overflow-auto">
       <Dates today={today} />
-      <Weather weather={data} />
+      <Weather weather={data} today={today} />
       <Divider />
       <DatesGroups datesGroups={datesGroups} today={today} />
       <ProgressBarByYear />

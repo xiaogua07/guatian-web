@@ -200,115 +200,12 @@ interface Refer {
 const useQWeather = () => {
     const [data, setData] = useState<QWeatherResInterface | null>(null);
     useEffect(() => {
-        // /qweather/weather/3d
-        axios.get("http://47.116.30.230:8081/solar-term/next")
+        console.log(`Call once`)
+        axios.get("http://47.116.30.230:8081/qweather/weather/3d")
             .then((res) => {
-                setData(
-                    {
-                        "code": "200",
-                        "updateTime": "2024-05-16T16:34+08:00",
-                        "fxLink": "https://www.qweather.com/weather/gongshu-101210112.html",
-                        "daily": [
-                            {
-                                "fxDate": "2024-05-16",
-                                "sunrise": "05:06",
-                                "sunset": "18:48",
-                                "moonrise": "12:14",
-                                "moonset": "01:09",
-                                "moonPhase": "盈凸月",
-                                "moonPhaseIcon": "803",
-                                "tempMax": "29",
-                                "tempMin": "14",
-                                "iconDay": "100",
-                                "textDay": "晴",
-                                "iconNight": "150",
-                                "textNight": "晴",
-                                "wind360Day": "180",
-                                "windDirDay": "南风",
-                                "windScaleDay": "1-3",
-                                "windSpeedDay": "16",
-                                "wind360Night": "225",
-                                "windDirNight": "西南风",
-                                "windScaleNight": "1-3",
-                                "windSpeedNight": "16",
-                                "humidity": "67",
-                                "precip": "0.0",
-                                "pressure": "1009",
-                                "vis": "25",
-                                "cloud": "25",
-                                "uvIndex": "11"
-                            },
-                            {
-                                "fxDate": "2024-05-17",
-                                "sunrise": "05:05",
-                                "sunset": "18:48",
-                                "moonrise": "13:08",
-                                "moonset": "01:37",
-                                "moonPhase": "盈凸月",
-                                "moonPhaseIcon": "803",
-                                "tempMax": "31",
-                                "tempMin": "19",
-                                "iconDay": "100",
-                                "textDay": "晴",
-                                "iconNight": "150",
-                                "textNight": "晴",
-                                "wind360Day": "135",
-                                "windDirDay": "东南风",
-                                "windScaleDay": "1-3",
-                                "windSpeedDay": "16",
-                                "wind360Night": "135",
-                                "windDirNight": "东南风",
-                                "windScaleNight": "1-3",
-                                "windSpeedNight": "16",
-                                "humidity": "75",
-                                "precip": "0.0",
-                                "pressure": "1008",
-                                "vis": "25",
-                                "cloud": "25",
-                                "uvIndex": "12"
-                            },
-                            {
-                                "fxDate": "2024-05-18",
-                                "sunrise": "05:05",
-                                "sunset": "18:49",
-                                "moonrise": "14:01",
-                                "moonset": "02:03",
-                                "moonPhase": "盈凸月",
-                                "moonPhaseIcon": "803",
-                                "tempMax": "30",
-                                "tempMin": "19",
-                                "iconDay": "100",
-                                "textDay": "晴",
-                                "iconNight": "150",
-                                "textNight": "晴",
-                                "wind360Day": "90",
-                                "windDirDay": "东风",
-                                "windScaleDay": "3-4",
-                                "windSpeedDay": "24",
-                                "wind360Night": "90",
-                                "windDirNight": "东风",
-                                "windScaleNight": "1-3",
-                                "windSpeedNight": "16",
-                                "humidity": "87",
-                                "precip": "0.0",
-                                "pressure": "1008",
-                                "vis": "25",
-                                "cloud": "25",
-                                "uvIndex": "12"
-                            }
-                        ],
-                        "refer": {
-                            "sources": [
-                                "QWeather"
-                            ],
-                            "license": [
-                                "CC BY-SA 4.0"
-                            ]
-                        }
-                    }
-                );
+                setData(res.data);
             })
-    }, [])
+    }, []);
 
     return { data };
 }
