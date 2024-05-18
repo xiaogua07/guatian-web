@@ -63,7 +63,7 @@ const Weather: React.FC<MyProps> = ({ weather, today }) => {
           <div>
             <i className="qi-2156"></i>
           </div>
-          <div className="flex ml-[5px] mt-[12px] ">
+          <div className="flex ml-[5px]">
             <div>{dayWeather?.tempMin}°</div>
             - <div>{dayWeather?.tempMax}°</div>
           </div>
