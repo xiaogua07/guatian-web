@@ -197,7 +197,7 @@ interface Refer {
     license: string[]
 }
 
-const queryUrl = "https://api.guakun.ink:9000/qweather/weather/3d"
+const queryUrl = "https://api.guakun.ink/qweather/weather/3d"
 // const queryUrl = "http://47.116.30.230:8081/qweather/weather/3d"
 const useQWeather = () => {
     const [data, setData] = useState<QWeatherResInterface | null>(null);
