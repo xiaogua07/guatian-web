@@ -197,11 +197,13 @@ interface Refer {
     license: string[]
 }
 
+const queryUrl = "https://api.guakun.ink:9000/qweather/weather/3d"
+// const queryUrl = "http://47.116.30.230:8081/qweather/weather/3d"
 const useQWeather = () => {
     const [data, setData] = useState<QWeatherResInterface | null>(null);
     useEffect(() => {
         console.log(`Call once`)
-        axios.get("http://47.116.30.230:8081/qweather/weather/3d")
+        axios.get(queryUrl)
             .then((res) => {
                 setData(res.data);
             })
