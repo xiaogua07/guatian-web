@@ -197,8 +197,8 @@ interface Refer {
     license: string[]
 }
 
-const queryUrl = "https://guatiancore.guakun01.workers.dev/";
-// const queryUrl = "";
+const queryUrl = "https://api.gualand.cc/";
+// const queryUrl = "https://guatiancore.guakun01.workers.dev/";
 // const queryUrl = "https://api.guakun.ink/qweather/weather/3d"
 // const queryUrl = "http://47.116.30.230:8081/qweather/weather/3d"
 
