@@ -38,7 +38,7 @@ export default function Home() {
         // 换床单
         {
           title:  '🛏️',
-          lastDate: '2024-05-03',
+          lastDate: '2024-06-01',
         },
       ]
     },
@@ -48,7 +48,7 @@ export default function Home() {
         // 拖地
         {
           title: '🧹',
-          lastDate: '2024-05-04',
+          lastDate: '2024-06-01',
         },
         // 迪士尼乐园
         {
