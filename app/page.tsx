@@ -33,12 +33,12 @@ export default function Home() {
         // 理发
         {
           title:  '💇🏻',
-          lastDate: '2024-05-03',
+          lastDate: '2024-06-01',
         },
         // 换床单
         {
           title:  '🛏️',
-          lastDate: '2024-06-01',
+          lastDate: '2024-05-26',
         },
       ]
     },
