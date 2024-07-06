@@ -48,12 +48,12 @@ export default function Home() {
         // 拖地
         {
           title: '🧹',
-          lastDate: '2024-06-01',
+          lastDate: '2024-06-23',
         },
         // 迪士尼乐园
         {
           title: '🎠',
-          lastDate: '2024-06-22'
+          lastDate: '2024-07-21'
         }
       ]
     },
