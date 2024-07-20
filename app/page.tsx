@@ -38,7 +38,7 @@ export default function Home() {
         // 换床单
         {
           title:  '🛏️',
-          lastDate: '2024-06-13',
+          lastDate: '2024-07-20',
         },
       ]
     },
@@ -53,7 +53,12 @@ export default function Home() {
         // 迪士尼乐园
         {
           title: '🎠',
-          lastDate: '2024-07-21'
+          lastDate: '2024-07-28'
+        },
+        // 莫文蔚演唱会
+        {
+          title: '🎠',
+          lastDate: '2024-07-27'
         }
       ]
     },
