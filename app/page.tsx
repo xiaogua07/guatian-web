@@ -33,7 +33,7 @@ export default function Home() {
         // 理发
         {
           title:  '💇🏻',
-          lastDate: '2024-06-01',
+          lastDate: '2024-07-13',
         },
         // 换床单
         {
@@ -57,7 +57,7 @@ export default function Home() {
         },
         // 莫文蔚演唱会
         {
-          title: '🎠',
+          title: '莫后演唱会',
           lastDate: '2024-07-27'
         }
       ]
