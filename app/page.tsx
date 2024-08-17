@@ -16,10 +16,6 @@ export default function Home() {
       name: "瓜",
       dates: [
         // 理发
-        {
-          title:  '💇🏻',
-          lastDate: '2024-04-16',
-        },
         // 换床单
         {
           title:  '🛏️',
@@ -38,7 +34,7 @@ export default function Home() {
         // 换床单
         {
           title:  '🛏️',
-          lastDate: '2024-07-20',
+          lastDate: '2024-08-17',
         },
       ]
     },
@@ -48,7 +44,7 @@ export default function Home() {
         // 拖地
         {
           title: '🧹',
-          lastDate: '2024-06-23',
+          lastDate: '2024-08-10',
         },
         // 迪士尼乐园
         {
